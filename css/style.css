@@ -1,0 +1,29 @@
+/*まだフォントの名前変えてない
+@font-face {
+    font-family: 'Futura-Med';
+    src: url('/fonts/Futura-Med.ttf') format('woff');
+    url('/fonts/Futura-Med.ttf') format('truetype');
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: #333;
+    margin: 0 auto;
+    font-family: 'ヒラギノ角ゴ ProN W3';
+}
+
+.header {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+}
