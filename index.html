@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>タスマニアガイド</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="js/slick-1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="js/slick-1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,25 +31,26 @@
     </section>
 
     <section class="about">
+        <img src="images/map.png" width="200px" alt="">
         <h3>タスマニアについて</h3>
         <p>
             タスマニア島は、オーストラリア本土の南東部に浮かぶ北海道ほどのサイズの小さな島です。<br>島の4割が国立公園や自然保護区に指定されており、<br>タスマニア・デビルをはじめ、ウォンバットやペンギンなどの貴重な動物が生息していいます。<br>メルボルンから飛行機で1時間。<br>留学を通じて実感した自然豊かで穏やかな街の魅力をお伝えします。
         </p>
         <div class="a-wrapper">
             <div style="position:relative;">
-                <a href="＃watch"><img src="image/photo1.jpg" alt="" width="346" height="98" border="0" class="button" /></a>
+                <a href="＃watch"><img src="images/seaside.JPG" alt="" width="445px" border="0" class="button" /></a>
                 <div style="position:absolute; left: 24px; top: 13px; width: 217px;">
                     <p class="button-text">観る</p>
                 </div>
             </div>
             <div style="position:relative;">
-                <a href="＃feel"><img src="image/photo1.jpg" alt="" width="346" height="98" border="0" class="button" /></a>
+                <a href="＃feel"><img src="images/city.JPG" alt="" width="445px" class="button" /></a>
                 <div style="position:absolute; left: 24px; top: 13px; width: 217px;">
                     <p class="button-text">体感する</p>
                 </div>
             </div>
             <div style="position:relative;">
-                <a href="＃learn"><img src="image/photo1.jpg" alt="" width="346" height="98" border="0" class="button" /></a>
+                <a href="＃learn"><img src="images/portarther.JPG" alt="" width="445px" class="button" /></a>
                 <div style="position:absolute; left: 24px; top: 13px; width: 217px;">
                     <p class="button-text">学ぶ</p>
                 </div>
@@ -58,50 +64,40 @@
             島の約37％が国立公園や自然保護区に指定されており、美しく広大な景色が広がっています。<br>タスマニアデビルやウォンバット、カンガルーなどにも出会えます。
         </p>
         <div class="wrapper">
-            <div class="slider">
-                <div><img src="images/hero.jpg" width="258" height="190" alt=""></div>
-                <div><img src="images/background2.jpg" width="258" height="190" alt=""></div>
-                <div><img src="images/background3.jpg" width="258" height="190" alt=""></div>
-                <div><img src="images/background4.jpg" width="258" height="190" alt=""></div>
-                <div><img src="images/background5.jpg" width="258" height="190" alt=""></div>
-            </div>
+            <ul class="slider">
+                <li><img src="images/richmond.jpg" alt=""></li>
+                <li><img src="images/devil.JPG" alt="image02"></li>
+                <li><img src="images/mountain.JPG" alt="image03"></li>
+                <li><img src="images/port.JPG"  alt="image04"></li>
+                <li><img src="images/kangaroo.JPG" alt="image05"></li>
+            </ul>
         </div>
-        <script>
-            $(function() {
-                $('.slider').slick({
-                    autoplay: false,
-                    //                    autoplaySpeed: 5000,
-                    dots: true,
-                    arrows: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    responsive: [{
-                            breakpoint: 1024,
-                            settings: {
+            <script>
+                $(function() {
+                            $('.slider').slick({
+                                centerMode: true,
+                                centerPadding: '60px',
                                 slidesToShow: 3,
-                                slidesToScroll: 3,
-                                infinite: true,
-                                dots: true
-                            }
-                        },
-                        {
-                            breakpoint: 600,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 2
-                            }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1
-                            }
-                        }
-                    ]
-                });
-            });
-
+                                responsive: [{
+                                        breakpoint: 768,
+                                        settings: {
+                                            arrows: false,
+                                            centerMode: true,
+                                            centerPadding: '40px',
+                                            slidesToShow: 3
+                                        }
+                                    },
+                                    {
+                                        breakpoint: 480,
+                                        settings: {
+                                            arrows: false,
+                                            centerMode: true,
+                                            centerPadding: '40px',
+                                            slidesToShow: 1
+                                        }
+                                    }
+                                ]
+                            });
         </script>
     </section>
 
@@ -110,18 +106,21 @@
         <p>土日に開催されるマーケットや、朝市では、新鮮な野菜や果物、魚介類やワインが並び、<br>多くの現地の人々が訪れます。州都であるホバートを少し離れると入植時代の街並みを感じることができます。</p>
 
         <div class="f-wrapper">
-            <div class="f1">
-
+            <div class="detail f1">
+                <figure><img src="images/market.JPG" alt="" width="250px"></figure>
+                <h4>サラマンカマーケット</h4>
                 <p>毎週土曜に開催され、300店以上の露店が<br>アート、工芸品、食材、ワインなどを販売して<br>います。現地の人が多く買い物に集まります。</p>
             </div>
 
-            <div class="f2">
-
+            <div class="detail f2">
+                <figure><img src="images/kiki.jpg" alt="" width="250px"></figure>
+                <h4>Ross Village Bakery</h4>
                 <p>映画『魔女の宅急便』のモデルになったと<br>言われているパン屋。周囲には古いニレ並木や<br>19世紀初頭の家々が残っています。</p>
             </div>
 
-            <div class="f3">
-
+            <div class="detail f3">
+                <figure><img src="images/farmgate.jpg" alt="" width="250px"></figure>
+                <h4>Farm Gate Market</h4>
                 <p>午前8時半にFarm Bellが鳴って始まる。採れ<br>たてのオーガニック野菜や伝統的な手法<br>で作られたバターなど乳製品が販売されている。</p>
             </div>
         </div>
@@ -133,18 +132,21 @@
             州都ホバートは英国人が最初に上陸したシドニーに次ぎ、二番目に古い都市といわれています。<br>シドニーやメルボルンなどの大都市と違い、あまり開発が行われていないタスマニア<br>の各地には植民時代を偲ばせる建築物が200年近くの時を経て、今でも数多く残っています。
         </p>
         <div class="l-wrapper">
-            <div class="l1">
-
+            <div class="detail l1">
+                <img src="images/arch.JPG" alt="" width="250px">
+                <h4>タスマンアーチ</h4>
                 <p>タスマン国立公園内にあり、高さ63.9m、天井までの<br>高さが海抜52.7mという巨大なアーチ型の断層。</p>
             </div>
 
-            <div class="l2">
-
+            <div class="detail l2">
+                <img src="images/portarther.JPG" alt="" width="250px">
+                <h4>ポート・アーサー</h4>
                 <p>かつて国内最大級の流刑植民地があった場所で、<br>2010年にユネスコの世界遺産に「オーストラリアの<br>囚人遺跡群」の1つとして登録されました。</p>
             </div>
 
-            <div class="l3">
-
+            <div class="detail l3">
+                <img src="images/mona.jpg" alt="" width="250px">
+                  <h4>MONA美術館</h4>
                 <p>大富豪デイヴィッド・ウォルシュが創設した<br>私設の美術館。「大人のディズニー」と呼ばれて<br>おり、斬新な展示物がたくさん並んでいます。</p>
             </div>
         </div>
@@ -153,21 +155,24 @@
     <section class="tips">
         <h3>旅のコツ</h3>
         <div class="t-wrapper">
-            <div class="t1">
+            <div class="detail t1">
                 <h4>Point1</h4>
                 <h5>日本と季節が逆！</h5>
+                <img src="images/temperature.png" alt="" width="310px">
                 <p>季節が逆になっているから急な温度変化<br>による体調不良に気をつけよう。夏は<br>サングラスや日焼け止めを忘れないようにしよう。</p>
             </div>
 
-            <div class="t2">
+            <div class="detail t2">
                 <h4>Point2</h4>
                 <h5>食品の持ち込みは要申請！</h5>
+                <img src="images/suitcase.jpg" alt="" width="250px">
                 <p>オーストラリア固有の動植物の生体環境を守るため、<br>検疫が厳しくなっています。<br>持ち込める食品を予め確認しよう。</p>
             </div>
 
-            <div class="t3">
+            <div class="detail t3">
                 <h4>Point3</h4>
                 <h5>コンセントの変換アダプターも忘れずに！</h5>
+                <img src="images/plug.jpg" alt="" width="250px">
                 <p>日本はA形プラグ、オーストラリアはO形プラグ<br>を使っている。変換アダプターが必要なので<br>忘れずに持っていこう。</p>
             </div>
         </div>
@@ -181,11 +186,10 @@
             </p>
 
             <a href="https://instagram.com/tasmania?igshid=80h44thmzhnl" class="more">もっと見る</a>
-
+            <img src="images/instagram.jpg" alt="" width="330px">
         </div>
     </section>
 
-    <footer>© 2020 ayano oshima </footer>
+    <div class="footer">© 2020 ayano oshima </div>
 </body>
-
 </html>

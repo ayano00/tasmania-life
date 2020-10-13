@@ -16,14 +16,266 @@ body {
     position: relative;
     text-align: center;
     color: #333;
+    background-color: antiquewhite;
     margin: 0 auto;
-    font-family: 'ヒラギノ角ゴ ProN W3';
+    font-family: "Tsukushi A Round Gothic";
 }
 
 .header {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background-position: center center;
-    background-size: cover;
+    background: url(../images/header.JPG) center / cover;
 }
+
+.header-logo {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translateY(-30%) translateX(-25%);
+    -webkit- transform: translateY(-30%) translateX(-25%);
+}
+
+h1 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    font-size: 100px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 20px;
+    padding-left: 12px;
+    color: #fff;
+    text-align: left;
+}
+
+.header nav{
+    color: antiquewhite;
+}
+
+.header ul {
+    text-align: right;
+}
+
+.header li {
+    display: inline-block;
+    list-style-type: none;
+    position: top;
+}
+
+nav{
+    overflow: hidden;
+}
+
+nav a {
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin-top: 30px;
+    margin-right: 35px;
+    transition: 0.5s;
+    position: relative;
+}
+
+nav a:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #03535e
+}
+
+h3 {
+    font-size: 30px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    color: #03535e;
+}
+
+p {
+    font-size: 12px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider{
+    margin: 100px auto;
+    width: 80%;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+
+.feel {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-wrapper {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+figure{
+    height: 220px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.detail {
+    position: relative;
+/*    background-color: #fff;*/
+    padding: 30px;
+    margin: 20px 10px 10px;
+/*
+    float: left;
+    border-radius: 12px;
+*/
+}
+
+.feel p{
+    padding-left: 0px;
+}
+
+.learn {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-wrapper {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tips {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-wrapper {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tips .detail{
+     position: relative;
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px 10px 10px;
+/*
+    float: left;
+    border-radius: 12px;
+*/
+}
+
+.footer{
+     color: #333;
+    background-color: #a1bbd0;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+    
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .header-logo {
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit- transform: translateY(-50%) translateX(-50%);
+    }
+
+    h1 {
+
+        font-size: 25%;
+        padding-left: 8px;
+        margin-bottom: 8px;
+        color: #fff;
+    }
+
+    h2 {
+        font-size: 20%;
+        padding-left: 12px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 480px) {}
