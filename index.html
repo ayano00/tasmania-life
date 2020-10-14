@@ -9,18 +9,28 @@
     <link href="js/slick-1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>
-     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
 </head>
 
 <body>
     <section class="header">
         <nav>
-            <ul>
-                <li><a href="#about">タスマニアについて</a></li>
-                <li><a href="#watch">観る</a></li>
-                <li><a href="#feel">体感する</a></li>
-                <li><a href="#learn">学ぶ</a></li>
-                <li><a href="#tips">旅のコツ</a></li>
+            <ul id="header-nav">
+                <li><a href="#about"><i class="far fa-question-circle"></i> タスマニアについて</a></li>
+                <li>
+                    <figure><a href="#watch"><i class="far fa-eye"></i> 観る</a></figure>
+                </li>
+                <li>
+                    <figure><a href="#feel"><i class="far fa-handshake"></i> 体感する</a></figure>
+                </li>
+                <li>
+                    <figure><a href="#learn"><i class="fas fa-pencil-alt"></i> 学ぶ</a></figure>
+                </li>
+                <li>
+                    <figure><a href="#tips"><i class="far fa-lightbulb"></i> 旅のコツ</a></figure>
+                </li>
             </ul>
         </nav>
 
@@ -31,35 +41,35 @@
     </section>
 
     <section class="about">
-        <img src="images/map.png" width="200px" alt="">
-        <h3>タスマニアについて</h3>
+        <img src="images/map.png" width="170px" alt="">
+        <h3><i class="far fa-question-circle"></i> タスマニアについて</h3>
         <p>
             タスマニア島は、オーストラリア本土の南東部に浮かぶ北海道ほどのサイズの小さな島です。<br>島の4割が国立公園や自然保護区に指定されており、<br>タスマニア・デビルをはじめ、ウォンバットやペンギンなどの貴重な動物が生息していいます。<br>メルボルンから飛行機で1時間。<br>留学を通じて実感した自然豊かで穏やかな街の魅力をお伝えします。
         </p>
         <div class="a-wrapper">
             <div style="position:relative;">
-                <a href="＃watch"><img src="images/seaside.JPG" alt="" width="445px" border="0" class="button" /></a>
+                <a href="＃watch"><img src="images/watch-1.png" alt="" width="445px" border="0" class="button" /></a>
                 <div style="position:absolute; left: 24px; top: 13px; width: 217px;">
-                    <p class="button-text">観る</p>
+                    <p class="button-text"><i class="far fa-eye"></i> 観る</p>
                 </div>
             </div>
             <div style="position:relative;">
-                <a href="＃feel"><img src="images/city.JPG" alt="" width="445px" class="button" /></a>
+                <a href="＃feel"><img src="images/feel-1.png" alt="" width="445px" class="button" /></a>
                 <div style="position:absolute; left: 24px; top: 13px; width: 217px;">
-                    <p class="button-text">体感する</p>
+                    <p class="button-text"><i class="far fa-handshake"></i> 体感する</p>
                 </div>
             </div>
             <div style="position:relative;">
-                <a href="＃learn"><img src="images/portarther.JPG" alt="" width="445px" class="button" /></a>
+                <a href="＃learn"><img src="images/learn-1.png" alt="" width="445px" class="button" /></a>
                 <div style="position:absolute; left: 24px; top: 13px; width: 217px;">
-                    <p class="button-text">学ぶ</p>
+                    <p class="button-text"><i class="fas fa-pencil-alt"></i> 学ぶ</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="watch">
-        <h3>観る</h3>
+        <h3><i class="far fa-eye"></i> 観る</h3>
         <p>
             島の約37％が国立公園や自然保護区に指定されており、美しく広大な景色が広がっています。<br>タスマニアデビルやウォンバット、カンガルーなどにも出会えます。
         </p>
@@ -68,41 +78,43 @@
                 <li><img src="images/richmond.jpg" alt=""></li>
                 <li><img src="images/devil.JPG" alt="image02"></li>
                 <li><img src="images/mountain.JPG" alt="image03"></li>
-                <li><img src="images/port.JPG"  alt="image04"></li>
+                <li><img src="images/port.JPG" alt="image04"></li>
                 <li><img src="images/kangaroo.JPG" alt="image05"></li>
             </ul>
         </div>
-            <script>
-                $(function() {
-                            $('.slider').slick({
+        <script>
+            $(function() {
+                $('.slider').slick({
+                    centerMode: true,
+                    centerPadding: '60px',
+                    slidesToShow: 3,
+                    responsive: [{
+                            breakpoint: 768,
+                            settings: {
+                                arrows: false,
                                 centerMode: true,
-                                centerPadding: '60px',
-                                slidesToShow: 3,
-                                responsive: [{
-                                        breakpoint: 768,
-                                        settings: {
-                                            arrows: false,
-                                            centerMode: true,
-                                            centerPadding: '40px',
-                                            slidesToShow: 3
-                                        }
-                                    },
-                                    {
-                                        breakpoint: 480,
-                                        settings: {
-                                            arrows: false,
-                                            centerMode: true,
-                                            centerPadding: '40px',
-                                            slidesToShow: 1
-                                        }
-                                    }
-                                ]
-                            });
+                                centerPadding: '40px',
+                                slidesToShow: 3
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                arrows: false,
+                                centerMode: true,
+                                centerPadding: '40px',
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
+                });
+            });
+
         </script>
     </section>
 
     <section class="feel">
-        <h3>体感する</h3>
+        <h3><i class="far fa-handshake"></i> 体感する</h3>
         <p>土日に開催されるマーケットや、朝市では、新鮮な野菜や果物、魚介類やワインが並び、<br>多くの現地の人々が訪れます。州都であるホバートを少し離れると入植時代の街並みを感じることができます。</p>
 
         <div class="f-wrapper">
@@ -121,39 +133,39 @@
             <div class="detail f3">
                 <figure><img src="images/farmgate.jpg" alt="" width="250px"></figure>
                 <h4>Farm Gate Market</h4>
-                <p>午前8時半にFarm Bellが鳴って始まる。採れ<br>たてのオーガニック野菜や伝統的な手法<br>で作られたバターなど乳製品が販売されている。</p>
+                <p>午前8時半にFarm Bellが鳴って始まる。<br>採れたてのオーガニック野菜やバター<br>などの乳製品が販売されています。</p>
             </div>
         </div>
     </section>
 
     <section class="learn">
-        <h3>学ぶ</h3>
+        <h3><i class="fas fa-pencil-alt"></i> 学ぶ</h3>
         <p>
             州都ホバートは英国人が最初に上陸したシドニーに次ぎ、二番目に古い都市といわれています。<br>シドニーやメルボルンなどの大都市と違い、あまり開発が行われていないタスマニア<br>の各地には植民時代を偲ばせる建築物が200年近くの時を経て、今でも数多く残っています。
         </p>
         <div class="l-wrapper">
             <div class="detail l1">
-                <img src="images/arch.JPG" alt="" width="250px">
+                <figure><img src="images/arch.JPG" alt="" width="250px"></figure>
                 <h4>タスマンアーチ</h4>
-                <p>タスマン国立公園内にあり、高さ63.9m、天井までの<br>高さが海抜52.7mという巨大なアーチ型の断層。</p>
+                <p>タスマン国立公園内にあり、高さ63.9m、<br>天井までの高さが海抜52.7mという<br>巨大なアーチ型の断層。</p>
             </div>
 
             <div class="detail l2">
-                <img src="images/portarther.JPG" alt="" width="250px">
+                <figure><img src="images/portarther.JPG" alt="" width="250px"></figure>
                 <h4>ポート・アーサー</h4>
-                <p>かつて国内最大級の流刑植民地があった場所で、<br>2010年にユネスコの世界遺産に「オーストラリアの<br>囚人遺跡群」の1つとして登録されました。</p>
+                <p>国内最大級の流刑植民地があった場所で、<br>2010年に「オーストラリアの囚人<br>遺跡群」として世界遺産に登録されました。</p>
             </div>
 
             <div class="detail l3">
-                <img src="images/mona.jpg" alt="" width="250px">
-                  <h4>MONA美術館</h4>
-                <p>大富豪デイヴィッド・ウォルシュが創設した<br>私設の美術館。「大人のディズニー」と呼ばれて<br>おり、斬新な展示物がたくさん並んでいます。</p>
+                <figure><img src="images/mona.jpg" alt="" width="250px"></figure>
+                <h4>MONA美術館</h4>
+                <p>大富豪による私設の美術館。<br>作品の歴史や作風に特徴はなく、<br>斬新な展示物がたくさん並んでいます。</p>
             </div>
         </div>
     </section>
 
     <section class="tips">
-        <h3>旅のコツ</h3>
+        <h3><i class="far fa-lightbulb"></i> 旅のコツ</h3>
         <div class="t-wrapper">
             <div class="detail t1">
                 <h4>Point1</h4>
@@ -166,7 +178,7 @@
                 <h4>Point2</h4>
                 <h5>食品の持ち込みは要申請！</h5>
                 <img src="images/suitcase.jpg" alt="" width="250px">
-                <p>オーストラリア固有の動植物の生体環境を守るため、<br>検疫が厳しくなっています。<br>持ち込める食品を予め確認しよう。</p>
+                <p>オーストラリア固有の動植物の生体環境を<br>守るため、検疫が厳しくなっています。<br>持ち込める食品を予め確認しよう。</p>
             </div>
 
             <div class="detail t3">
@@ -179,17 +191,18 @@
     </section>
 
     <section class="ig">
-        <h3>Instagram</h3>
+        <h3><i class="fab fa-instagram"></i> Instagram</h3>
         <div class="i-wrapper">
             <p>
                 @tasmania というタスマニア政府観光局の公式アカウントでは、タスマニア州各地の<br>季節ごとの魅力を発信している。行き先に迷ったときには参考にしてみよう。
             </p>
-
+            <img src="images/instagram1.png" alt="">
             <a href="https://instagram.com/tasmania?igshid=80h44thmzhnl" class="more">もっと見る</a>
-            <img src="images/instagram.jpg" alt="" width="330px">
+
         </div>
     </section>
 
     <div class="footer">© 2020 ayano oshima </div>
 </body>
+
 </html>

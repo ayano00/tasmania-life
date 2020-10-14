@@ -16,7 +16,7 @@ body {
     position: relative;
     text-align: center;
     color: #333;
-    background-color: antiquewhite;
+    background-color: #F5EBD7;
     margin: 0 auto;
     font-family: "Tsukushi A Round Gothic";
 }
@@ -25,13 +25,13 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: url(../images/header.JPG) center / cover;
+    background: url(../images/header-1.png) center / cover;
 }
 
 .header-logo {
     position: absolute;
     top: 30%;
-    left: 25%;
+    left: 20%;
     transform: translateY(-30%) translateX(-25%);
     -webkit- transform: translateY(-30%) translateX(-25%);
 }
@@ -52,31 +52,18 @@ h2 {
     text-align: left;
 }
 
-.header nav{
-    color: antiquewhite;
-}
-
-.header ul {
-    text-align: right;
-}
-
-.header li {
-    display: inline-block;
-    list-style-type: none;
-    position: top;
-}
-
-nav{
+nav {
     overflow: hidden;
+    background-image: url(/images/background1.jpg);
 }
 
 nav a {
-    font-size: 20px;
+    font-size: 18px;
     display: block;
     text-decoration: none;
     color: #333;
-    margin-top: 30px;
-    margin-right: 35px;
+    margin-top: 20px;
+    /*    margin-right: 35px;*/
     transition: 0.5s;
     position: relative;
 }
@@ -86,33 +73,103 @@ nav a:hover {
     border-bottom-color: #03535e
 }
 
+#header-nav {
+    text-align: right;
+}
+
+#header-nav li {
+    display: inline-block;
+    list-style-type: none;
+    /*
+	margin-right:6px;
+	padding-left:10px;
+*/
+    border-left: 1px solid #333;
+    padding: 0 10px;
+}
+
+#header-nav li:first-child {
+    border: none;
+}
+
+#header-nav figure {
+    width: 120px;
+}
+
+/*
+#header-nav li+li
+{
+    border-left:1px
+}
+*/
+.about {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/about-bg1.png);
+    background-position: center center;
+  background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.about img{
+    padding-top: 70px;
+}
+
 h3 {
     font-size: 30px;
-    padding-left: 8px;
-    margin-bottom: 8px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    margin-top: 8px;
     color: #03535e;
 }
 
 p {
-    font-size: 12px;
+    font-size: 15px;
     padding-left: 8px;
     margin-bottom: 8px;
     color: #333;
 }
 
+.watch {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.a-wrapper img{
+    width: 250px;
+}
 .wrapper {
     width: 100%;
     margin: 0 auto;
 }
 
-.slider{
+.slider {
     margin: 100px auto;
     width: 80%;
 }
-.slider img{
+
+.slider img {
     height: auto;
     width: 100%;
 }
+
 /*slick setting*/
 .slick-prev:before,
 .slick-next:before {
@@ -129,7 +186,7 @@ p {
 }
 
 .f-wrapper {
-        display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -137,7 +194,7 @@ p {
     overflow: hidden;
 }
 
-figure{
+.feel figure {
     height: 220px;
     width: 250px;
     margin: 0 auto;
@@ -145,16 +202,16 @@ figure{
 
 .detail {
     position: relative;
-/*    background-color: #fff;*/
+    /*    background-color: #fff;*/
     padding: 30px;
     margin: 20px 10px 10px;
-/*
+    /*
     float: left;
     border-radius: 12px;
 */
 }
 
-.feel p{
+.feel p {
     padding-left: 0px;
 }
 
@@ -168,12 +225,18 @@ figure{
 }
 
 .l-wrapper {
-        display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     width: 100%;
     overflow: hidden;
+}
+
+.learn figure {
+    height: 230px;
+    width: 250px;
+    margin: 0 auto;
 }
 
 .tips {
@@ -183,10 +246,14 @@ figure{
     overflow: hidden;
     justify-content: center;
     align-items: center;
+     background-image: url(/images/tips-bg.png);
+    background-position: center center;
+  background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 .t-wrapper {
-        display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -194,25 +261,51 @@ figure{
     overflow: hidden;
 }
 
-.tips .detail{
-     position: relative;
+.tips .detail {
+    position: relative;
     background-color: #fff;
     padding: 30px;
     margin: 20px 10px 10px;
-/*
-    float: left;
-    border-radius: 12px;
-*/
 }
 
-.footer{
-     color: #333;
+.tips h4{
+     font-size: 30px;
+    padding: 10px;
+    margin-top: 8px;
+    color: #A1bbd0;
+    text-align: left;
+}
+.tips h5{
+     font-size: 16px;
+    padding: 10px;;
+    margin-top: 8px;
+    color: #333;
+}
+
+.ig{
+     margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+     background-image: url(/images/ig-bg.png);
+    background-position: center center;
+  background-repeat: no-repeat;
+    background-size: cover; 
+}
+.ig img {
+    width: 50%;
+}
+
+.footer {
+    color: #333;
     background-color: #a1bbd0;
     padding-top: 7px;
     padding-bottom: 10px;
     margin-top: 20px;
 }
-    
+
 .fuwatAnime {
     -webkit-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
