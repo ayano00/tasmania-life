@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <title>タスマニアガイド</title>
     <link rel="stylesheet" href="/css/style.css">
+    <!-- drawer.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+<!-- jquery & iScroll -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<!-- drawer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
     <link href="js/slick-1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css">
     <link href="js/slick-1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
@@ -15,7 +22,11 @@
 </head>
 
 <body>
-    <section class="header">
+<!--
+<div id="wrap">
+    <div class="description">
+-->
+        <section id="header" class="header">
         <nav>
             <ul id="header-nav">
                 <li><a href="#about"><i class="far fa-question-circle"></i> タスマニアについて</a></li>
@@ -39,13 +50,49 @@
             <h2>世界で1番水と空気がきれいな島、<br>タスマニア島へようこそ。</h2>
         </div>
     </section>
+<!--
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="none" id="svg-bg">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none" id="svg-bg">
+<path d="M0,0 v50 q10,10 20,0 t20,0 t20,0 t20,0 t20,0 v-50 Z" fill="#3eba90"></path>
+</svg>
+    </svg>
+</div>
+-->
+   <body class="drawer drawer--left">
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-brand" href="#header">タスマニアガイド</a></li>
+        <li><a class="drawer-menu-item" href="#about">タスマニアについて</a></li>
+        <li><a class="drawer-menu-item" href="#watch">観る</a></li>
+        <li><a class="drawer-menu-item" href="#feel">体感する</a></li>
+        <li><a class="drawer-menu-item" href="#learn">学ぶ</a></li>
+        <li><a class="drawer-menu-item" href="#tips">旅のコツ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main role="main">
+    <!-- Page content -->
+  </main>
+</body>
+ 
+  <script>
+   $(document).ready(function() {
+  $('.drawer').drawer();
+});
+    </script>
 
-    <section class="about">
+    <section id="about" class="about fuwat">
         <img src="images/map.png" width="170px" alt="">
         <h3><i class="far fa-question-circle"></i> タスマニアについて</h3>
-        <p>
-            タスマニア島は、オーストラリア本土の南東部に浮かぶ北海道ほどのサイズの小さな島です。<br>島の4割が国立公園や自然保護区に指定されており、<br>タスマニア・デビルをはじめ、ウォンバットやペンギンなどの貴重な動物が生息していいます。<br>メルボルンから飛行機で1時間。<br>留学を通じて実感した自然豊かで穏やかな街の魅力をお伝えします。
-        </p>
+        <div class=about-p><p>
+            タスマニア島は、オーストラリア本土の南東部に浮かぶ北海道ほどのサイズの小さな島です。島の4割が国立公園や自然保護区に指定されており、タスマニア・デビルをはじめ、ウォンバットやペンギンなどの貴重な動物が生息していいます。メルボルンから飛行機で1時間。留学を通じて実感した自然豊かで穏やかな街の魅力をお伝えします。
+            </p></div>
         <div class="a-wrapper">
             <div style="position:relative;">
                 <a href="＃watch"><img src="images/watch-1.png" alt="" width="445px" border="0" class="button" /></a>
@@ -68,20 +115,21 @@
         </div>
     </section>
 
-    <section class="watch">
-        <h3><i class="far fa-eye"></i> 観る</h3>
+    <section id="watch" class="watch">
+        <div class="fuwat"><h3><i class="far fa-eye"></i> 観る</h3>
         <p>
             島の約37％が国立公園や自然保護区に指定されており、美しく広大な景色が広がっています。<br>タスマニアデビルやウォンバット、カンガルーなどにも出会えます。
-        </p>
-        <div class="wrapper">
+            </p></div>
+        <div class="wrapper fuwat">
             <ul class="slider">
-                <li><img src="images/richmond.jpg" alt=""></li>
-                <li><img src="images/devil.JPG" alt="image02"></li>
-                <li><img src="images/mountain.JPG" alt="image03"></li>
-                <li><img src="images/port.JPG" alt="image04"></li>
-                <li><img src="images/kangaroo.JPG" alt="image05"></li>
+                <li><span class="fade-text">リッチモンド</span><img src="images/richmond.jpg" alt=""></li>
+                <li><span class="fade-text">タスマニアデビル</span><img src="images/devil.JPG" alt="image02"></li>
+                <li><span class="fade-text">ウェリントン山</span><img src="images/mountain.JPG" alt="image03"></li>
+                <li><span class="fade-text">ピア</span><img src="images/port.JPG" alt="image04"></li>
+                <li><span class="fade-text">カンガルー</span><img src="images/kangaroo.JPG" alt="image05"></li>
             </ul>
         </div>
+        
         <script>
             $(function() {
                 $('.slider').slick({
@@ -113,11 +161,11 @@
         </script>
     </section>
 
-    <section class="feel">
-        <h3><i class="far fa-handshake"></i> 体感する</h3>
-        <p>土日に開催されるマーケットや、朝市では、新鮮な野菜や果物、魚介類やワインが並び、<br>多くの現地の人々が訪れます。州都であるホバートを少し離れると入植時代の街並みを感じることができます。</p>
+    <section id="feel" class="feel ">
+        <div class="fuwat"><h3><i class="far fa-handshake"></i> 体感する</h3>
+            <p>土日に開催されるマーケットや、朝市では、新鮮な野菜や果物、魚介類やワインが並び、<br>多くの現地の人々が訪れます。州都であるホバートを少し離れると入植時代の街並みを感じることができます。</p></div>
 
-        <div class="f-wrapper">
+        <div class="f-wrapper fuwat">
             <div class="detail f1">
                 <figure><img src="images/market.JPG" alt="" width="250px"></figure>
                 <h4>サラマンカマーケット</h4>
@@ -138,7 +186,7 @@
         </div>
     </section>
 
-    <section class="learn">
+    <section id="learn" class="learn fuwat">
         <h3><i class="fas fa-pencil-alt"></i> 学ぶ</h3>
         <p>
             州都ホバートは英国人が最初に上陸したシドニーに次ぎ、二番目に古い都市といわれています。<br>シドニーやメルボルンなどの大都市と違い、あまり開発が行われていないタスマニア<br>の各地には植民時代を偲ばせる建築物が200年近くの時を経て、今でも数多く残っています。
@@ -164,45 +212,65 @@
         </div>
     </section>
 
-    <section class="tips">
-        <h3><i class="far fa-lightbulb"></i> 旅のコツ</h3>
-        <div class="t-wrapper">
+    <section id="tips" class="tips">
+        <div class="fuwat"><h3><i class="far fa-lightbulb"></i> 旅のコツ</h3></div>
+        <div class="t-wrapper fuwat">
             <div class="detail t1">
                 <h4>Point1</h4>
-                <h5>日本と季節が逆！</h5>
-                <img src="images/temperature.png" alt="" width="310px">
-                <p>季節が逆になっているから急な温度変化<br>による体調不良に気をつけよう。夏は<br>サングラスや日焼け止めを忘れないようにしよう。</p>
+                <figure><h5>日本と季節が逆！</h5>
+                <img src="images/temperature.png" alt="" width="300px"></figure>
+                <p>季節が反対になるから急な温度変化<br>による体調不良に気をつけよう。夏は<br>日焼け止めなどを忘れないようにしよう。</p>
             </div>
 
             <div class="detail t2">
                 <h4>Point2</h4>
-                <h5>食品の持ち込みは要申請！</h5>
-                <img src="images/suitcase.jpg" alt="" width="250px">
+                <figure><h5>食品の持ち込みは要申請！</h5>
+                <img src="images/suitcase.jpg" alt="" width="250px"></figure>
                 <p>オーストラリア固有の動植物の生体環境を<br>守るため、検疫が厳しくなっています。<br>持ち込める食品を予め確認しよう。</p>
             </div>
 
             <div class="detail t3">
                 <h4>Point3</h4>
-                <h5>コンセントの変換アダプターも忘れずに！</h5>
-                <img src="images/plug.jpg" alt="" width="250px">
-                <p>日本はA形プラグ、オーストラリアはO形プラグ<br>を使っている。変換アダプターが必要なので<br>忘れずに持っていこう。</p>
+                <figure><h5>コンセントの変換アダプターも<br>忘れずに！</h5>
+                <img src="images/plug.jpg" alt="" width="220px"></figure>
+                <p>日本はA形プラグ、オーストラリアはO形<br>プラグを使っている。変換アダプターが<br>必要なことを忘れないでおこう。</p>
             </div>
         </div>
     </section>
 
-    <section class="ig">
-        <h3><i class="fab fa-instagram"></i> Instagram</h3>
-        <div class="i-wrapper">
+    <section id="ig" class="ig">
+        <div class="fuwat"><h3><i class="fab fa-instagram"></i> Instagram</h3></div>
+        <div class="i-wrapper fuwat">
             <p>
-                @tasmania というタスマニア政府観光局の公式アカウントでは、タスマニア州各地の<br>季節ごとの魅力を発信している。行き先に迷ったときには参考にしてみよう。
+                @ tasmania というタスマニア政府観光局の公式アカウントでは、タスマニア州各地の<br>季節ごとの魅力を発信している。行き先に迷ったときには参考にしてみよう。
             </p>
-            <img src="images/instagram1.png" alt="">
+            <img src="images/instagram1.png" alt=""><br>
             <a href="https://instagram.com/tasmania?igshid=80h44thmzhnl" class="more">もっと見る</a>
 
         </div>
     </section>
-
+<section id="top" class="top">
+    <a href="#header" class="topbutton"><img src="images/topbutton.png"  width="80px" ></a>
+    
+</section>
     <div class="footer">© 2020 ayano oshima </div>
+    
+    <script type="text/javascript">
+$(document).ready(function(){
+  $('.fuwat').css('visibility','hidden');
+  $(window).scroll(function(){
+   var windowHeight = $(window).height(),
+       topWindow = $(window).scrollTop();
+   $('.fuwat').each(function(){
+    var objectPosition = $(this).offset().top;
+    if(topWindow > objectPosition - windowHeight + 200){
+     $(this).addClass("fuwatAnime");
+    }
+   });
+  });
+});
+</script>
+
 </body>
 
 </html>

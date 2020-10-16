@@ -1,11 +1,3 @@
-/*まだフォントの名前変えてない
-@font-face {
-    font-family: 'Futura-Med';
-    src: url('/fonts/Futura-Med.ttf') format('woff');
-    url('/fonts/Futura-Med.ttf') format('truetype');
-}
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -55,14 +47,17 @@ h2 {
 nav {
     overflow: hidden;
     background-image: url(/images/background1.jpg);
+    width: 100%;
+    display: block;
+    position: relative;
+     padding: 18px 0px 23px 0px;
 }
 
 nav a {
-    font-size: 18px;
+    font-size: 16px;
     display: block;
     text-decoration: none;
     color: #333;
-    margin-top: 20px;
     /*    margin-right: 35px;*/
     transition: 0.5s;
     position: relative;
@@ -93,15 +88,32 @@ nav a:hover {
 }
 
 #header-nav figure {
-    width: 120px;
+    width: 110px;
+    text-align: center;
 }
 
 /*
-#header-nav li+li
-{
-    border-left:1px
+html, body, #wrap {
+    height: 100%;
+}
+#wrap {
+    position: relative;
+}
+#svg-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 */
+
+.drawer{
+    z-index: 600;
+    list-style-type: none;
+}
+
 .about {
     margin: 0 auto;
     width: 100%;
@@ -111,12 +123,18 @@ nav a:hover {
     align-items: center;
     background-image: url(/images/about-bg1.png);
     background-position: center center;
-  background-repeat: no-repeat;
-    background-size: cover;    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.about img{
+.about img {
     padding-top: 70px;
+}
+
+.about h3 {
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 50px;
 }
 
 h3 {
@@ -133,6 +151,35 @@ p {
     margin-bottom: 8px;
     color: #333;
 }
+.about-p p{
+    background-color: #F5EBD7;
+    margin: 0px 300px;
+}
+
+.a-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.a-wrapper p{
+    color: #f5ebd7;
+    background-color: #03535e;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-wrapper img {
+    width: 250px;
+    margin: 30px;
+}
 
 .watch {
     margin: 0 auto;
@@ -143,21 +190,10 @@ p {
     align-items: center;
 }
 
-.a-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.a-wrapper img{
-    width: 250px;
-}
 .wrapper {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 70px;
 }
 
 .slider {
@@ -167,13 +203,34 @@ p {
 
 .slider img {
     height: auto;
-    width: 100%;
+    width: 95%;
 }
 
 /*slick setting*/
 .slick-prev:before,
 .slick-next:before {
     color: #000;
+}
+
+.slider .fade-text {
+    position: absolute;
+    text-align: right;
+    top: 50%;
+    color: #f2f2de;
+    font-size: 18px;
+    animation: slideTextFade 1.75s ease 0s 1 normal;
+}
+
+@keyframes slideTextFade {
+
+    0%,
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .feel {
@@ -192,6 +249,7 @@ p {
     position: relative;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 80px;
 }
 
 .feel figure {
@@ -231,6 +289,7 @@ p {
     position: relative;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 80px;
 }
 
 .learn figure {
@@ -246,10 +305,10 @@ p {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-     background-image: url(/images/tips-bg.png);
+    background-image: url(/images/tips-bg.png);
     background-position: center center;
-  background-repeat: no-repeat;
-    background-size: cover; 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .t-wrapper {
@@ -259,91 +318,89 @@ p {
     position: relative;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 80px;
 }
 
 .tips .detail {
     position: relative;
     background-color: #fff;
     padding: 30px;
-    margin: 20px 10px 10px;
+/*    margin: 10px 10px 10px;*/
 }
 
-.tips h4{
-     font-size: 30px;
-    padding: 10px;
+.tips figure {
+    width: 300px;
+    height: 250px;
+}
+
+.tips h4 {
+    font-size: 30px;
     margin-top: 8px;
     color: #A1bbd0;
     text-align: left;
 }
-.tips h5{
-     font-size: 16px;
-    padding: 10px;;
+
+.tips h5 {
+    font-size: 16px;
+    padding: 7px;
     margin-top: 8px;
     color: #333;
 }
 
-.ig{
-     margin: 0 auto;
+.ig {
+    margin: 0 auto;
     width: 100%;
     position: relative;
     overflow: hidden;
     justify-content: center;
     align-items: center;
-     background-image: url(/images/ig-bg.png);
+    background-image: url(/images/ig-bg.png);
     background-position: center center;
-  background-repeat: no-repeat;
-    background-size: cover; 
-}
-.ig img {
-    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.ig img {
+    width: 50%;
+    margin: 40px 0px 40px 0px;
+}
+
+.ig a {
+    color: #f2f2de;
+    background-color: #03535e;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-color: #03535e;
+    text-decoration: none;
+    margin-bottom: 60px;
+   display: inline-block;
+    flex: none;
+}
+
+.ig a:hover {
+    color: #03535e;
+    background-color: #f2f2de;
+    border-color: #03535e;
+}
+
+.top a{
+    position: fixed;
+    top: 80%;
+    left: 92%;
+}
+.top hover{
+    box-shadow: 2px;
+}
 .footer {
     color: #333;
     background-color: #a1bbd0;
-    padding-top: 7px;
+    padding-top: 8px;
     padding-bottom: 10px;
-    margin-top: 20px;
 }
 
-.fuwatAnime {
-    -webkit-animation-fill-mode: both;
-    -ms-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1.5s;
-    -ms-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    -webkit-animation-name: fuwatAnime;
-    -ms-animation-name: fuwatAnime;
-    animation-name: fuwatAnime;
-    visibility: visible !important;
-}
-
-@-webkit-keyframes fuwatAnime {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
-}
-
-@keyframes fuwatAnime {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-20px);
-        -ms-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
+@media screen and (max-width : 600px) {
+    .drawer{
+        display: none;
     }
 }
 
@@ -369,6 +426,31 @@ p {
         color: #fff;
         text-align: center;
     }
+    
+    .drawer{
+        display: block;
+    }
 }
 
 @media screen and (max-width : 480px) {}
+
+.fuwatAnime {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1.5s;
+ -ms-animation-duration:1.5s;
+ animation-duration:1.5s;
+ -webkit-animation-name: fuwatAnime;
+ -ms-animation-name: fuwatAnime;
+ animation-name: fuwatAnime;
+ visibility: visible !important;
+}
+@-webkit-keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
