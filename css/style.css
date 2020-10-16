@@ -50,7 +50,7 @@ nav {
     width: 100%;
     display: block;
     position: relative;
-     padding: 18px 0px 23px 0px;
+    padding: 18px 0px 23px 0px;
 }
 
 nav a {
@@ -87,6 +87,10 @@ nav a:hover {
     border: none;
 }
 
+#header-nav li:last-child {
+    margin: 3px;
+}
+
 #header-nav figure {
     width: 110px;
     text-align: center;
@@ -109,7 +113,7 @@ html, body, #wrap {
 }
 */
 
-.drawer{
+.drawer {
     z-index: 600;
     list-style-type: none;
 }
@@ -121,7 +125,7 @@ html, body, #wrap {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    background-image: url(/images/about-bg1.png);
+    background-image: url(/images/about-background.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -151,7 +155,8 @@ p {
     margin-bottom: 8px;
     color: #333;
 }
-.about-p p{
+
+.about-p p {
     background-color: #F5EBD7;
     margin: 0px 300px;
 }
@@ -180,7 +185,7 @@ p {
 
 .a-wrapper img {
     width: 250px;
-    margin: 30px;
+/*    margin: 20px;*/
 }
 
 .watch {
@@ -327,7 +332,7 @@ p {
     position: relative;
     background-color: #fff;
     padding: 30px;
-/*    margin: 10px 10px 10px;*/
+    /*    margin: 10px 10px 10px;*/
 }
 
 .tips figure {
@@ -375,7 +380,7 @@ p {
     border-color: #03535e;
     text-decoration: none;
     margin-bottom: 60px;
-   display: inline-block;
+    display: inline-block;
     flex: none;
 }
 
@@ -385,14 +390,20 @@ p {
     border-color: #03535e;
 }
 
-.top a{
+#top{
+    transition: all 0.5s;
+}
+
+.top a {
     position: fixed;
     top: 80%;
     left: 92%;
 }
-.top hover{
+
+.top hover {
     box-shadow: 2px;
 }
+
 .footer {
     color: #333;
     background-color: #a1bbd0;
@@ -401,7 +412,7 @@ p {
 }
 
 @media screen and (max-width : 600px) {
-    .drawer{
+    .drawer {
         display: none;
     }
 }
@@ -428,8 +439,8 @@ p {
         color: #fff;
         text-align: center;
     }
-    
-    .drawer{
+
+    .drawer {
         display: block;
     }
 }
@@ -437,22 +448,42 @@ p {
 @media screen and (max-width : 480px) {}
 
 .fuwatAnime {
- -webkit-animation-fill-mode:both;
- -ms-animation-fill-mode:both;
- animation-fill-mode:both;
- -webkit-animation-duration:1.5s;
- -ms-animation-duration:1.5s;
- animation-duration:1.5s;
- -webkit-animation-name: fuwatAnime;
- -ms-animation-name: fuwatAnime;
- animation-name: fuwatAnime;
- visibility: visible !important;
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
 }
+
 @-webkit-keyframes fuwatAnime {
- 0% { opacity: 0; -webkit-transform: translateY(-20px); }
- 100% { opacity: 1; -webkit-transform: translateY(0); }
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
 }
+
 @keyframes fuwatAnime {
- 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
- 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
 }

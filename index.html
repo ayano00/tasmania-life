@@ -6,15 +6,15 @@
     <title>タスマニアガイド</title>
     <link rel="stylesheet" href="/css/style.css">
     <!-- drawer.css -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
-<!-- jquery & iScroll -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
-<!-- drawer.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
     <link href="js/slick-1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css">
     <link href="js/slick-1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>-->
     <script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -22,11 +22,11 @@
 </head>
 
 <body>
-<!--
+    <!--
 <div id="wrap">
     <div class="description">
 -->
-        <section id="header" class="header">
+    <section id="header" class="header">
         <nav>
             <ul id="header-nav">
                 <li><a href="#about"><i class="far fa-question-circle"></i> タスマニアについて</a></li>
@@ -50,7 +50,7 @@
             <h2>世界で1番水と空気がきれいな島、<br>タスマニア島へようこそ。</h2>
         </div>
     </section>
-<!--
+    <!--
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="none" id="svg-bg">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none" id="svg-bg">
@@ -59,42 +59,46 @@
     </svg>
 </div>
 -->
-   <body class="drawer drawer--left">
-  <header role="banner">
-    <button type="button" class="drawer-toggle drawer-hamburger">
-      <span class="sr-only">toggle navigation</span>
-      <span class="drawer-hamburger-icon"></span>
-    </button>
-    <nav class="drawer-nav" role="navigation">
-      <ul class="drawer-menu">
-        <li><a class="drawer-brand" href="#header">タスマニアガイド</a></li>
-        <li><a class="drawer-menu-item" href="#about">タスマニアについて</a></li>
-        <li><a class="drawer-menu-item" href="#watch">観る</a></li>
-        <li><a class="drawer-menu-item" href="#feel">体感する</a></li>
-        <li><a class="drawer-menu-item" href="#learn">学ぶ</a></li>
-        <li><a class="drawer-menu-item" href="#tips">旅のコツ</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main role="main">
-    <!-- Page content -->
-  </main>
-</body>
- 
-  <script>
-   $(document).ready(function() {
-  $('.drawer').drawer();
-});
+
+    <body class="drawer drawer--left">
+        <header role="banner">
+            <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu">
+                    <li><a class="drawer-brand" href="#header">タスマニアガイド</a></li>
+                    <li><a class="drawer-menu-item" href="#about">タスマニアについて</a></li>
+                    <li><a class="drawer-menu-item" href="#watch">観る</a></li>
+                    <li><a class="drawer-menu-item" href="#feel">体感する</a></li>
+                    <li><a class="drawer-menu-item" href="#learn">学ぶ</a></li>
+                    <li><a class="drawer-menu-item" href="#tips">旅のコツ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main role="main">
+            <!-- Page content -->
+        </main>
+    </body>
+
+    <script>
+        $(document).ready(function() {
+            $('.drawer').drawer();
+        });
+
     </script>
 
     <section id="about" class="about fuwat">
         <img src="images/map.png" width="170px" alt="">
         <h3><i class="far fa-question-circle"></i> タスマニアについて</h3>
-        <div class=about-p><p>
-            タスマニア島は、オーストラリア本土の南東部に浮かぶ北海道ほどのサイズの小さな島です。島の4割が国立公園や自然保護区に指定されており、タスマニア・デビルをはじめ、ウォンバットやペンギンなどの貴重な動物が生息していいます。メルボルンから飛行機で1時間。留学を通じて実感した自然豊かで穏やかな街の魅力をお伝えします。
-            </p></div>
+        <div class=about-p>
+            <p>
+                タスマニア島は、オーストラリア本土の南東部に浮かぶ北海道ほどのサイズの小さな島です。島の4割が国立公園や自然保護区に指定されており、タスマニア・デビルをはじめ、ウォンバットやペンギンなどの貴重な動物が生息していいます。メルボルンから飛行機で1時間。留学を通じて実感した自然豊かで穏やかな街の魅力をお伝えします。
+            </p>
+        </div>
         <div class="a-wrapper">
-<!--
+            <!--
             <div style="position:relative;">
                 <a href="＃watch"><img src="images/watch-1.png" alt="" width="445px" border="0" class="button" /></a>
                 <div style="position:absolute; left: 24px; top: 13px; width: 217px;">
@@ -114,23 +118,25 @@
                 </div>
             </div>
 -->
-       <div class="watch">
-           <a href="#watch"><img src="images/watch-button.png"></a>
-           </div>
+            <div class="watch">
+                <a href="#watch"><img src="images/watch-button.png"></a>
+            </div>
             <div class="feel">
-           <a href="#feel"><img src="images/feel-button.png"></a>
-           </div>
+                <a href="#feel"><img src="images/feel-button.png"></a>
+            </div>
             <div class="learn">
-           <a href="#learn"><img src="images/learn-button.png"></a>
-           </div>
-       </div>
+                <a href="#learn"><img src="images/learn-button.png"></a>
+            </div>
+        </div>
     </section>
 
     <section id="watch" class="watch">
-        <div class="fuwat"><h3><i class="far fa-eye"></i> 観る</h3>
-        <p>
-            島の約37％が国立公園や自然保護区に指定されており、美しく広大な景色が広がっています。<br>タスマニアデビルやウォンバット、カンガルーなどにも出会えます。
-            </p></div>
+        <div class="fuwat">
+            <h3><i class="far fa-eye"></i> 観る</h3>
+            <p>
+                島の約37％が国立公園や自然保護区に指定されており、美しく広大な景色が広がっています。<br>タスマニアデビルやウォンバット、カンガルーなどにも出会えます。
+            </p>
+        </div>
         <div class="wrapper fuwat">
             <ul class="slider">
                 <li><span class="fade-text">リッチモンド</span><img src="images/richmond.jpg" alt=""></li>
@@ -140,7 +146,7 @@
                 <li><span class="fade-text">カンガルー</span><img src="images/kangaroo.JPG" alt="image05"></li>
             </ul>
         </div>
-        
+
         <script>
             $(function() {
                 $('.slider').slick({
@@ -173,8 +179,10 @@
     </section>
 
     <section id="feel" class="feel ">
-        <div class="fuwat"><h3><i class="far fa-handshake"></i> 体感する</h3>
-            <p>土日に開催されるマーケットや、朝市では、新鮮な野菜や果物、魚介類やワインが並び、<br>多くの現地の人々が訪れます。州都であるホバートを少し離れると入植時代の街並みを感じることができます。</p></div>
+        <div class="fuwat">
+            <h3><i class="far fa-handshake"></i> 体感する</h3>
+            <p>土日に開催されるマーケットや、朝市では、新鮮な野菜や果物、魚介類やワインが並び、<br>多くの現地の人々が訪れます。州都であるホバートを少し離れると入植時代の街並みを感じることができます。</p>
+        </div>
 
         <div class="f-wrapper fuwat">
             <div class="detail f1">
@@ -224,33 +232,43 @@
     </section>
 
     <section id="tips" class="tips">
-        <div class="fuwat"><h3><i class="far fa-lightbulb"></i> 旅のコツ</h3></div>
+        <div class="fuwat">
+            <h3><i class="far fa-lightbulb"></i> 旅のコツ</h3>
+        </div>
         <div class="t-wrapper fuwat">
             <div class="detail t1">
                 <h4>Point1</h4>
-                <figure><h5>日本と季節が逆！</h5>
-                <img src="images/temperature.png" alt="" width="300px"></figure>
+                <figure>
+                    <h5>日本と季節が逆！</h5>
+                    <img src="images/temperature.png" alt="" width="300px">
+                </figure>
                 <p>季節が反対になるから急な温度変化<br>による体調不良に気をつけよう。夏は<br>日焼け止めなどを忘れないようにしよう。</p>
             </div>
 
             <div class="detail t2">
                 <h4>Point2</h4>
-                <figure><h5>食品の持ち込みは要申請！</h5>
-                <img src="images/suitcase.jpg" alt="" width="250px"></figure>
+                <figure>
+                    <h5>食品の持ち込みは要申請！</h5>
+                    <img src="images/suitcase.jpg" alt="" width="250px">
+                </figure>
                 <p>オーストラリア固有の動植物の生体環境を<br>守るため、検疫が厳しくなっています。<br>持ち込める食品を予め確認しよう。</p>
             </div>
 
             <div class="detail t3">
                 <h4>Point3</h4>
-                <figure><h5>コンセントの変換アダプターも<br>忘れずに！</h5>
-                <img src="images/plug.jpg" alt="" width="220px"></figure>
+                <figure>
+                    <h5>コンセントの変換アダプターも<br>忘れずに！</h5>
+                    <img src="images/plug.jpg" alt="" width="220px">
+                </figure>
                 <p>日本はA形プラグ、オーストラリアはO形<br>プラグを使っている。変換アダプターが<br>必要なことを忘れないでおこう。</p>
             </div>
         </div>
     </section>
 
     <section id="ig" class="ig">
-        <div class="fuwat"><h3><i class="fab fa-instagram"></i> Instagram</h3></div>
+        <div class="fuwat">
+            <h3><i class="fab fa-instagram"></i> Instagram</h3>
+        </div>
         <div class="i-wrapper fuwat">
             <p>
                 @ tasmania というタスマニア政府観光局の公式アカウントでは、タスマニア州各地の<br>季節ごとの魅力を発信している。行き先に迷ったときには参考にしてみよう。
@@ -260,28 +278,65 @@
 
         </div>
     </section>
-<section id="top" class="top">
-    <a href="#header" class="topbutton"><img src="images/topbutton.png"  width="80px" ></a>
-    
-</section>
-    <div class="footer">© 2020 ayano oshima </div>
-    
-    <script type="text/javascript">
-$(document).ready(function(){
-  $('.fuwat').css('visibility','hidden');
-  $(window).scroll(function(){
-   var windowHeight = $(window).height(),
-       topWindow = $(window).scrollTop();
-   $('.fuwat').each(function(){
-    var objectPosition = $(this).offset().top;
-    if(topWindow > objectPosition - windowHeight + 200){
-     $(this).addClass("fuwatAnime");
-    }
-   });
-  });
-});
-</script>
+    <section id="top" class="top">
+        <a href="#header" class="topbutton"><img src="images/topbutton.png" width="80px"></a>
 
+    </section>
+    <div class="footer">© 2020 ayano oshima </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.fuwat').css('visibility', 'hidden');
+            $(window).scroll(function() {
+                var windowHeight = $(window).height(),
+                    topWindow = $(window).scrollTop();
+                $('.fuwat').each(function() {
+                    var objectPosition = $(this).offset().top;
+                    if (topWindow > objectPosition - windowHeight + 200) {
+                        $(this).addClass("fuwatAnime");
+                    }
+                });
+            });
+        });
+
+    </script>
+
+<script>
+    let target = document.querySelectorAll("#header"),
+    options = {threshold:0.8},
+    observer = new IntersectionObserver(
+      function(e){
+        e.forEach(
+          function(e){
+            if (e.isIntersecting){
+                $("#top").css("opacity", "0");
+            }
+          }
+        )
+      },options
+    );
+    target.forEach(function(e){
+      observer.observe(e);
+    });;
+    
+    
+    let target2 = document.querySelectorAll("#about"),
+    options2 = {threshold:0.5},
+    observer2 = new IntersectionObserver(
+      function(e){
+        e.forEach(
+          function(e){
+            if (e.isIntersecting){
+                $("#top").css("opacity", "1");
+            }
+          }
+        )
+      },options2
+    );
+    target2.forEach(function(e){
+      observer2.observe(e);
+    });;
+</script>
 </body>
 
 </html>
