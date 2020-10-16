@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Tsukushi A Round Gothic';
+    src: url('/fonts/Futura-Med.ttf') format('woff');
+    url('/fonts/Futura-Med.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +16,7 @@ body {
     color: #333;
     background-color: #F5EBD7;
     margin: 0 auto;
+    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
     font-family: "Tsukushi A Round Gothic";
 }
 
