@@ -601,11 +601,11 @@ p {
     }
       .top a {
     top: 85%;
-    left: 70%;
+    left: 80%;
 }
     
 .top a img{
-    width: 30px
+    width: 40px
 }
     .top a:hover{
         display:none;
