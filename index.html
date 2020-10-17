@@ -61,7 +61,7 @@
 </div>
 -->
 
-    <body class="drawer drawer--left">
+    <body class="drawer drawer--right">
         <header role="banner">
             <button type="button" class="drawer-toggle drawer-hamburger">
                 <span class="sr-only">toggle navigation</span>
@@ -85,13 +85,16 @@
 
     <script>
         $(document).ready(function() {
-            $('.drawer').drawer();
+            $('.drawer').drawer(
+            
+            );
+            
         });
 
     </script>
 
     <section id="about" class="about fuwat">
-        <img src="images/map.png" width="170px" alt="">
+        <div class="map"><img src="images/map.png" width="170px" alt=""></div>
         <h3><i class="far fa-question-circle"></i> タスマニアについて</h3>
         <div class=about-p>
             <p>
@@ -119,14 +122,20 @@
                 </div>
             </div>
 -->
-            <div class="effect-float watch">
-                <a href="#watch"><img src="images/watch-button.png"></a>
+            <div class="effect-color watch">
+                <a href="#watch">
+                <img class="pc" src="images/watch-button.png">
+                <img class="phone" src="images/watch-phone.png"></a>
             </div>
-            <div class="effect-float feel">
-                <a href="#feel"><img src="images/feel-button.png"></a>
+            <div class="effect-color feel">
+                <a href="#feel">
+                <img class="pc"src="images/feel-button.png">
+                <img class="phone" src="images/feel-phone.png"></a>
             </div>
-            <div class="effect-float learn">
-                <a href="#learn"><img src="images/learn-button.png"></a>
+            <div class="effect-color learn">
+                <a href="#learn">
+                <img class="pc" src="images/learn-button.png">
+                <img class="phone" src="images/learn-phone.png"></a>
             </div>
         </div>
     </section>
