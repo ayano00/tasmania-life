@@ -426,6 +426,7 @@ p {
 }
 .top a img{
       display: block;
+    width: 80px
 /*
   height: 360px;
   box-shadow: 0 2px 4px rgba(3,3,3,.09);
@@ -555,6 +556,16 @@ p {
     .ig img {
         width: 75%;
     }
+    
+    .top a {
+    top: 85%;
+    left: 92%;
+}
+    
+.top a img{
+    width: 50px
+}
+  
 }
 
 
@@ -588,6 +599,14 @@ p {
     .ig img {
         width: 100%;
     }
+      .top a {
+    top: 85%;
+    left: 92%;
+}
+    
+.top a img{
+    width: 30px
+}
 }
 
 
