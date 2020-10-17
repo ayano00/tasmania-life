@@ -159,11 +159,11 @@ p {
 }
 
 .about-p {
-     margin: 0 auto;
-    background:rgba(252,242,222,0.5);
+    margin: 0 auto;
+    background: rgba(252, 242, 222, 0.5);
     padding: 30px;
     text-align: center;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
     width: 50%;
 }
@@ -181,6 +181,21 @@ p {
 .a-wrapper img {
     width: 250px;
     /*    margin: 20px;*/
+}
+
+.effect-float a {
+    display: block;
+    height: 360px;
+    box-shadow: 0 2px 4px rgba(3, 3, 3, .09);
+    border-radius: 3px;
+}
+
+.effect-float a:hover {
+    display: block;
+    height: 360px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, .12);
+    border-radius: 3px;
+    margin-top: -15px;
 }
 
 .watch {
@@ -254,10 +269,10 @@ p {
     margin: 0 auto;
 }
 
-.title-p{
-    width: 70%;
+.title-p {
+    width: 920px;
     margin: 0 auto;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -267,20 +282,11 @@ p {
     margin: 0 auto;
 }
 
-.f2 img {
-    padding-top: 15px;
-}
-
-.f3 img {
-    padding-top: 15px;
-}
-
 .detail {
     position: relative;
-    /*    background-color: #fff;*/
     padding: 30px;
     margin: 20px 10px 10px;
-    width: 23%;
+    width: 250px;
     /*
     float: left;
     border-radius: 12px;
@@ -335,11 +341,12 @@ p {
     margin-bottom: 80px;
 }
 
-.tips .detail {
+.tips .t-detail {
     position: relative;
     background-color: #fff;
     padding: 30px;
-    /*    margin: 10px 10px 10px;*/
+    margin: 10px 10px 10px;
+    width: 300px;
 }
 
 .tips figure {
@@ -372,6 +379,10 @@ p {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.ig .title-p {
+    width: 55%;
 }
 
 .ig img {
@@ -419,11 +430,11 @@ p {
 }
 
 @media screen and (max-width: 960px) {
-/*
-    .drawer--left {
-        display: none;
+    .about-p {
+
+        width: 70%;
     }
-*/
+
     #header-nav {
         display: block;
     }
@@ -472,21 +483,40 @@ p {
     .t-wrapper {
         flex-direction: column;
     }
-    .detail{
+
+    .detail {
         width: 60%;
     }
-    .title-p{
-    width: 80%;
+
+    .title-p {
+        width: 80%;
     }
+    .ig .title-p {
+    width: 75%;
+}
+
+.ig img {
+    width: 75%;
+}
 }
 
 
 @media screen and (max-width : 480px) {
-     .detail{
-        width: 80%;
+    .about-p {
+        width: 85%;
+        font-size: 13px;
     }
-    .title-p{
-    width: 90%;
+
+    .detail {
+        width: 85%;
+    }
+
+.ig .title-p {
+    width: 85%;
+}
+
+.ig img {
+    width: 85%;
     }
 }
 
