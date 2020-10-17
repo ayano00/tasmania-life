@@ -65,7 +65,6 @@ nav a {
     display: block;
     text-decoration: none;
     color: #333;
-    /*    margin-right: 35px;*/
     transition: 0.5s;
     position: relative;
 }
@@ -82,10 +81,6 @@ nav a:hover {
 #header-nav li {
     display: inline-block;
     list-style-type: none;
-    /*
-	margin-right:6px;
-	padding-left:10px;
-*/
     border-left: 1px solid #333;
     padding: 0 10px;
 }
@@ -139,13 +134,14 @@ html, body, #wrap {
 }
 
 .about img {
-    padding-top: 70px;
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 .about h3 {
     font-size: 30px;
     padding-top: 0px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 h3 {
@@ -158,14 +154,18 @@ h3 {
 
 p {
     font-size: 15px;
-    padding-left: 8px;
-    margin-bottom: 8px;
     color: #333;
+    margin: 0 auto;
 }
 
-.about-p p {
-    background-color: #F5EBD7;
-    margin: 0px 300px;
+.about-p {
+     margin: 0 auto;
+    background:rgba(252,242,222,0.5);
+    padding: 30px;
+    text-align: center;
+     justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .a-wrapper {
@@ -178,21 +178,9 @@ p {
     margin-bottom: 70px;
 }
 
-/*
-.a-wrapper p{
-    color: #f5ebd7;
-    background-color: #03535e;
-    font-size: 20px;
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-*/
-
 .a-wrapper img {
     width: 250px;
-/*    margin: 20px;*/
+    /*    margin: 20px;*/
 }
 
 .watch {
@@ -261,9 +249,16 @@ p {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100%;
     overflow: hidden;
     margin-bottom: 80px;
+    margin: 0 auto;
+}
+
+.title-p{
+    width: 70%;
+    margin: 0 auto;
+     justify-content: center;
+    align-items: center;
 }
 
 .feel figure {
@@ -272,19 +267,24 @@ p {
     margin: 0 auto;
 }
 
+.f2 img {
+    padding-top: 15px;
+}
+
+.f3 img {
+    padding-top: 15px;
+}
+
 .detail {
     position: relative;
     /*    background-color: #fff;*/
     padding: 30px;
     margin: 20px 10px 10px;
+    width: 23%;
     /*
     float: left;
     border-radius: 12px;
 */
-}
-
-.feel p {
-    padding-left: 0px;
 }
 
 .learn {
@@ -375,7 +375,7 @@ p {
 }
 
 .ig img {
-    width: 50%;
+    width: 55%;
     margin: 40px 0px 40px 0px;
 }
 
@@ -397,7 +397,7 @@ p {
     border-color: #03535e;
 }
 
-#top{
+#top {
     transition: all 0.5s;
 }
 
@@ -418,13 +418,27 @@ p {
     padding-bottom: 10px;
 }
 
-@media screen and (max-width : 600px) {
-    .drawer {
+@media screen and (max-width: 960px) {
+/*
+    .drawer--left {
         display: none;
+    }
+*/
+    #header-nav {
+        display: block;
     }
 }
 
-@media screen and (max-width : 600px) {
+
+@media screen and (max-width : 800px) {
+    .drawer {
+        display: block;
+    }
+
+    #header-nav {
+        display: none;
+    }
+
     .header-logo {
         top: 50%;
         left: 50%;
@@ -434,25 +448,48 @@ p {
 
     h1 {
 
-        font-size: 25%;
+        font-size: 50px;
         padding-left: 8px;
         margin-bottom: 8px;
         color: #fff;
     }
 
     h2 {
-        font-size: 20%;
-        padding-left: 12px;
+        font-size: 11px;
+        padding-left: 10px;
         color: #fff;
         text-align: center;
     }
 
-    .drawer {
-        display: block;
+    .f-wrapper {
+        flex-direction: column;
+    }
+
+    .l-wrapper {
+        flex-direction: column;
+    }
+
+    .t-wrapper {
+        flex-direction: column;
+    }
+    .detail{
+        width: 60%;
+    }
+    .title-p{
+    width: 80%;
     }
 }
 
-@media screen and (max-width : 480px) {}
+
+@media screen and (max-width : 480px) {
+     .detail{
+        width: 80%;
+    }
+    .title-p{
+    width: 90%;
+    }
+}
+
 
 .fuwatAnime {
     -webkit-animation-fill-mode: both;
