@@ -23,10 +23,51 @@
 </head>
 
 <body>
-    <!--
-<div id="wrap">
-    <div class="description">
+   <div class="box">
+<!--
+  &.type1{
+    border-radius:50%;
+    border-width:8px;
+    border-style:solid;
+    border-color:#fff rgba(#fff,.12) rgba(#fff,.12);
+    animation:spinner1_1 1.5s infinite linear forwards;
+
+    span{
+      animation:spinner_loading_text 1.5s infinite linear forwards reverse;
+    }
 -->
+  <div class="spinner type1">
+    <span>Loading...</span>
+  </div>
+</div>
+    <div id="my-spinner" class="box">
+<!--
+  &.type1{
+    border-radius:50%;
+    border-width:8px;
+    border-style:solid;
+    border-color:#fff rgba(#fff,.12) rgba(#fff,.12);
+    animation:spinner1_1 1.5s infinite linear forwards;
+
+    span{
+      animation:spinner_loading_text 1.5s infinite linear forwards reverse;
+    }
+  }
+-->
+  <div class="spinner type1">
+    <span>Loading...</span>
+  </div>
+</div>
+ <script>
+           window.onload = function() {
+  let spinner = document.getElementById('my-spinner');
+ 
+  // .box に .loaded を追加してローディング表示を消す
+  spinner.classList.add('loaded');
+}
+    </script>
+
+   
     <section id="header" class="header">
         <nav>
             <ul id="header-nav">
