@@ -560,16 +560,16 @@ p {
 
 /*---レスポンシブパソコン---*/
 @media screen and (max-width: 1500px) {
-/*
     .drawer-nav{
-        display: none;
+       z-index: -10;
+        opacity: 0;
     }
     
     .drawer-toggle{
-        display: none;
+         z-index: -10;
+        opacity: 0;
     }
     
-*/
     .about-p {
 
         width: 70%;
@@ -590,20 +590,15 @@ p {
 
 /*---レスポンシブipad---*/
 @media screen and (max-width : 800px) {
-/*
     .drawer-nav {
-        display: block;
+        z-index: 600;
+        opacity: 1;
     }
     
     .drawer-toggle{
-        display: block;
+         z-index: 600;
+        opacity: 1;
     }
-*/
-/*
-    .drawer-overlay {
-    background-color: rgba(0, 0, 0, .20);
-}
-*/
 
     #header-nav {
         display: none;
