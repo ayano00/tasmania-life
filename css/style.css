@@ -1,12 +1,15 @@
+/*
 @font-face {
     font-family: 'Tsukushi A Round Gothic';
     src: url('/fonts/Futura-Med.ttf') format('woff');
     url('/fonts/Futura-Med.ttf') format('truetype');
 }
+*/
 
 * {
     margin: 0;
     padding: 0;
+    font-family: "Tsukushi A Round Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 }
 
 body {
@@ -222,10 +225,10 @@ nav a:hover {
     text-align: center;
 }
 
-.drawer {
+.drawer{
     z-index: 600;
-    list-style-type: none;
 }
+
 .drawer-hamburger-icon,
 .drawer-hamburger-icon:after,
 .drawer-hamburger-icon:before {
@@ -563,6 +566,7 @@ p {
 }
 
 @media screen and (max-width: 1500px) {
+/*
     .drawer-nav{
         display: none;
     }
@@ -571,6 +575,7 @@ p {
         display: none;
     }
     
+*/
     .about-p {
 
         width: 70%;
@@ -587,14 +592,11 @@ p {
     .phone {
         display: none;
     }
-
-    .banner {
-        display: none;
-    }
 }
 
 
 @media screen and (max-width : 800px) {
+/*
     .drawer-nav {
         display: block;
     }
@@ -602,6 +604,7 @@ p {
     .drawer-toggle{
         display: block;
     }
+*/
 /*
     .drawer-overlay {
     background-color: rgba(0, 0, 0, .20);
