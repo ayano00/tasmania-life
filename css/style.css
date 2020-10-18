@@ -145,6 +145,8 @@ body {
     position: relative;
     overflow: hidden;
     background: url(../images/header-1.png) center / cover;
+    background-color: rgba(255,255,255,0.1);
+    background-blend-mode:lighten;
      font-family: "Tsukushi A Round Gothic";
 }
 
@@ -494,6 +496,8 @@ p {
     justify-content: center;
     align-items: center;
     background-image: url(/images/ig-bg.png);
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode:lighten;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
