@@ -1,11 +1,3 @@
-/*
-@font-face {
-    font-family: 'Tsukushi A Round Gothic';
-    src: url('/fonts/Futura-Med.ttf') format('woff');
-    url('/fonts/Futura-Med.ttf') format('truetype');
-}
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +13,8 @@ body {
     margin: 0 auto;
     font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 }
+
+/*---loading---*/
 /*
 .spinner {
   position: absolute;
@@ -46,7 +40,6 @@ body {
   font-size: 12px;
 }
 */
-
 /* 1番目のアニメーションの場合 */
 /*
 .spinner.type1 {
@@ -145,6 +138,8 @@ body {
 }
 */
 
+
+/*---header---*/
 .header {
     height: 100vh;
     position: relative;
@@ -225,6 +220,7 @@ nav a:hover {
     text-align: center;
 }
 
+/*---drawer---*/
 .drawer{
     z-index: 600;
 }
@@ -235,6 +231,7 @@ nav a:hover {
     background-color: #03535e;
 }
 
+/*---タスマニアについて---*/
 .about {
     margin: 0 auto;
     width: 100%;
@@ -243,7 +240,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     background-image: url(/images/about-background.png);
-
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -304,6 +300,7 @@ p {
 
 /* box-shadow: 0 8px 12px rgba(0,0,0,.12);*/
 
+/*---観る---*/
 .watch {
     margin: 0 auto;
     width: 100%;
@@ -320,6 +317,7 @@ p {
     margin-bottom: 70px;
 }
 
+/*---slider---*/
 .slider {
     margin: 100px auto;
     width: 80%;
@@ -365,6 +363,7 @@ p {
     }
 }
 
+/*---体感する----*/
 .feel {
     margin: 0 auto;
     width: 100%;
@@ -405,12 +404,9 @@ p {
     margin: 20px 10px 10px;
     width: 250px;
      font-family: "Tsukushi A Round Gothic";
-    /*
-    float: left;
-    border-radius: 12px;
-*/
 }
 
+/*---学ぶ---*/
 .learn {
     margin: 0 auto;
     width: 100%;
@@ -437,6 +433,7 @@ p {
     margin: 0 auto;
 }
 
+/*---tips----*/
 .tips {
     margin: 0 auto;
     width: 100%;
@@ -488,6 +485,7 @@ p {
     color: #333;
 }
 
+/*----ig----*/
 .ig {
     margin: 0 auto;
     width: 100%;
@@ -529,6 +527,7 @@ p {
     border-color: #03535e;
 }
 
+/*----top----*/
 #top {
     transition: all 0.5s;
 }
@@ -538,17 +537,11 @@ p {
     top: 80%;
     left: 92%;
 }
+
 .top a img{
       display: block;
     width: 80px
-/*
-  height: 360px;
-  box-shadow: 0 2px 4px rgba(3,3,3,.09);
-  border-radius: 3px;
-*/
 }
-  
-
 
 .top img:hover {
    display: block;
@@ -565,6 +558,7 @@ p {
      font-family: "Tsukushi A Round Gothic";
 }
 
+/*---レスポンシブパソコン---*/
 @media screen and (max-width: 1500px) {
 /*
     .drawer-nav{
@@ -594,7 +588,7 @@ p {
     }
 }
 
-
+/*---レスポンシブipad---*/
 @media screen and (max-width : 800px) {
 /*
     .drawer-nav {
@@ -699,7 +693,7 @@ p {
   
 }
 
-
+/*---レスポンシブスマホ---*/
 @media screen and (max-width : 480px) {
     .body {
         font-family: sans-serif;
@@ -737,7 +731,7 @@ p {
    
 }
 
-
+/*-----fuwat----*/
 .fuwatAnime {
     -webkit-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
