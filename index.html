@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>タスマニアガイド</title>
-    <link rel="stylesheet" href="/css/style.css">
+    
     <!-- drawer.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- jquery & iScroll -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
@@ -23,7 +24,7 @@
 </head>
 
 <body>
-   <div class="box">
+<!--   <div class="box">-->
 <!--
   &.type1{
     border-radius:50%;
@@ -36,11 +37,13 @@
       animation:spinner_loading_text 1.5s infinite linear forwards reverse;
     }
 -->
+<!--
   <div class="spinner type1">
     <span>Loading...</span>
   </div>
 </div>
     <div id="my-spinner" class="box">
+-->
 <!--
   &.type1{
     border-radius:50%;
@@ -54,18 +57,24 @@
     }
   }
 -->
+<!--
   <div class="spinner type1">
     <span>Loading...</span>
   </div>
 </div>
- <script>
-           window.onload = function() {
+ <script　type="text/javascript">
+      $(function() {
+                window.onload = function() {
   let spinner = document.getElementById('my-spinner');
  
   // .box に .loaded を追加してローディング表示を消す
   spinner.classList.add('loaded');
 }
+            });
+
+          
     </script>
+-->
 
    
     <section id="header" class="header">
@@ -125,12 +134,13 @@
     </body>
 
     <script>
-        $(document).ready(function() {
-            $('.drawer').drawer(
+       $(document).ready(function() {
+    $('.drawer').drawer();
+    $('.drawer-nav').on('click', function() {
+        $('.drawer').drawer('close');
+    });
+});
 
-            );
-
-        });
 
     </script>
 
@@ -195,8 +205,9 @@
                 <li><span class="fade-text">リッチモンド</span><img src="images/richmond.jpg" alt=""></li>
                 <li><span class="fade-text">タスマニアデビル</span><img src="images/devil.JPG" alt="image02"></li>
                 <li><span class="fade-text">ウェリントン山</span><img src="images/mountain.JPG" alt="image03"></li>
-                <li><span class="fade-text">ピア</span><img src="images/port.JPG" alt="image04"></li>
+                <li><span class="fade-text"></span><img src="images/port.JPG" alt="image04"></li>
                 <li><span class="fade-text">カンガルー</span><img src="images/kangaroo.JPG" alt="image05"></li>
+                <li><span class="fade-text"></span><img src="images/port-2.jpg" alt="image06"></li>
             </ul>
         </div>
 
@@ -278,7 +289,7 @@
             <div class="detail l2">
                 <figure><img src="images/portarther.JPG" alt="" width="250px"></figure>
                 <h4>ポート・アーサー</h4>
-                <p>国内最大級の流刑植民地があった場所で、2010年に「オーストラリアの囚人遺跡群」として世界遺産に登録されました。</p>
+                <p>流刑植民地があった場所で、2010年に「オーストラリアの囚人遺跡群」として世界遺産に登録されました。</p>
             </div>
 
             <div class="detail l3">
@@ -307,7 +318,7 @@
                 <h4>Point2</h4>
                 <figure>
                     <h5>食品の持ち込みは要申請！</h5>
-                    <img src="images/suitcase.jpg" alt="" width="250px">
+                    <img src="images/suitcase.png" alt="" width="250px">
                 </figure>
                 <p>オーストラリア固有の動植物の生体環境を守るため、検疫が厳しくなっています。持ち込める食品を予め確認しよう。</p>
             </div>
@@ -315,8 +326,8 @@
             <div class="t-detail t3">
                 <h4>Point3</h4>
                 <figure>
-                    <h5>コンセントの変換アダプターも<br>忘れずに！</h5>
-                    <img src="images/plug.jpg" alt="" width="220px">
+                    <h5>変換アダプターも忘れずに！</h5>
+                    <img src="images/plug.png" alt="" width="250px">
                 </figure>
                 <p>日本はA形プラグ、オーストラリアはO形プラグを使っている。変換アダプターが必要なことを忘れないでおこう。</p>
             </div>
