@@ -561,12 +561,12 @@ p {
 /*---レスポンシブパソコン---*/
 @media screen and (max-width: 1500px) {
     .drawer-nav{
-       z-index: -10;
+/*       z-index: -10;*/
         opacity: 0;
     }
     
     .drawer-toggle{
-         z-index: -10;
+/*         z-index: -10;*/
         opacity: 0;
     }
     
@@ -591,12 +591,12 @@ p {
 /*---レスポンシブipad---*/
 @media screen and (max-width : 800px) {
     .drawer-nav {
-        z-index: 600;
+/*        z-index: 600;*/
         opacity: 1;
     }
     
     .drawer-toggle{
-         z-index: 600;
+/*       z*/
         opacity: 1;
     }
 
