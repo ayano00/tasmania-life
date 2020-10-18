@@ -101,15 +101,7 @@
             <h2>世界で1番水と空気がきれいな島、<br>タスマニア島へようこそ。</h2>
         </div>
     </section>
-    <!--
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="none" id="svg-bg">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none" id="svg-bg">
-<path d="M0,0 v50 q10,10 20,0 t20,0 t20,0 t20,0 t20,0 v-50 Z" fill="#3eba90"></path>
-</svg>
-    </svg>
-</div>
--->
+    
 
     <body class="drawer drawer--right">
         <header role="banner">
@@ -173,24 +165,41 @@
                 </div>
             </div>
 -->
-            <div class="effect-color watch">
-                <a href="#watch">
-                    <img class="pc" src="images/watch-button.png">
+            <div class="watch">
+                <a href="#watch" class="mouseover">
+                    <img class="pc" src="images/watch-button_off.png">
                     <img class="phone" src="images/watch-phone.png"></a>
             </div>
-            <div class="effect-color feel">
-                <a href="#feel">
-                    <img class="pc" src="images/feel-button.png">
+            <div class="feel">
+                <a href="#feel" class="mouseover">
+                    <img class="pc" src="images/feel-button_off.png">
                     <img class="phone" src="images/feel-phone.png"></a>
             </div>
-            <div class="effect-color learn">
-                <a href="#learn">
-                    <img class="pc" src="images/learn-button.png">
+            <div class="learn">
+                <a href="#learn" class="mouseover">
+                    <img class="pc" src="images/learn-button_off.png">
                     <img class="phone" src="images/learn-phone.png"></a>
             </div>
         </div>
     </section>
+<!--    画像がhoverされたときに入れ替え-->
+<script>
+    $(function(){
+    $('.mouseover').each(function(){
+        var src_off = $(this).find('img').attr('src');
+        var src_on = src_off.replace('_off','_on');
+        $('<img />').attr('src',src_on);
+        $(this).hover(function(){
+            $(this).find('img').attr('src',src_on);
+        },function(){
+            $(this).find('img').attr('src',src_off);
+        }); 
+    });
+});
+    </script>
 
+<!--   観る-->
+   
     <section id="watch" class="watch">
         <div class="fuwat">
             <h3><i class="far fa-eye"></i> 観る</h3>
@@ -202,12 +211,12 @@
         </div>
         <div class="wrapper fuwat">
             <ul class="slider">
-                <li><span class="fade-text">リッチモンド</span><img src="images/richmond.jpg" alt=""></li>
-                <li><span class="fade-text">タスマニアデビル</span><img src="images/devil.JPG" alt="image02"></li>
-                <li><span class="fade-text">ウェリントン山</span><img src="images/mountain.JPG" alt="image03"></li>
-                <li><span class="fade-text"></span><img src="images/port.JPG" alt="image04"></li>
-                <li><span class="fade-text">カンガルー</span><img src="images/kangaroo.JPG" alt="image05"></li>
-                <li><span class="fade-text"></span><img src="images/port-2.jpg" alt="image06"></li>
+                <li><figure><span class="fade-text">リッチモンド</span></figure><img src="images/richmond.jpg" alt=""></li>
+                <li><figure><span class="fade-text">タスマニアデビル</span></figure><img src="images/devil.JPG" alt="image02"></li>
+                <li><figure><span class="fade-text">ウェリントン山</span></figure><img src="images/mountain.JPG" alt="image03"></li>
+                <li><figure><span class="fade-text">Lindisfarne Bay</span></figure><img src="images/port.JPG" alt="image04"></li>
+                <li><figure><span class="fade-text">カンガルー</span></figure><img src="images/kangaroo.JPG" alt="image05"></li>
+                <li><figure><span class="fade-text">Geliston Bay</span></figure><img src="images/port-2.jpg" alt="image06"></li>
             </ul>
         </div>
 
